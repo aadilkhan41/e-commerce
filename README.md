@@ -25,7 +25,7 @@ Welcome to the official documentation for the E-Commerce REST API, a robust and 
 The base URL for all API requests is: https://e-commerce-n3de.onrender.com/
 
 ## Header
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWJhZjY1OWNkYjhkYTA3Y2NkYjBhMyIsImVtYWlsIjoiYWFkaWxAZXhhbXBsZS5jb20iLCJyb2xlIjoiU0VMTEVSIiwiaWF0IjoxNzUwODU4MzAzLCJleHAiOjE3NTA4OTQzMDN9.4zykXw8UpPkTzM75Pn-WNgg4_fqcKhfJjOJJTCCfato
+authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Users/Register
 ### Endpoints

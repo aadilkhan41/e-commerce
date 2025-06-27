@@ -22,14 +22,14 @@ Welcome to the official documentation for the E-Commerce REST API, a robust and 
 - Postman (optional for testing)
 
 ## Base URL
-The base URL for all API requests is: https://e-commerce-n3de.onrender.com/
+The base URL for all API requests is: https://e-commerce-n3de.onrender.com
 
 ## Header
 authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Users/Register
 ### Endpoints
-- POST /api/v1/user/register
+- POST https://e-commerce-n3de.onrender.com/api/v1/user/register
 
 ### Requests
 <pre> {
@@ -58,7 +58,7 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Users/Login
 ### Endpoints
-- POST /api/v1/user/login
+- POST https://e-commerce-n3de.onrender.com/api/v1/user/login
 
 ### Requests
 <pre> {
@@ -77,7 +77,7 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Users/Logout
 ### Endpoints
-- POST /api/v1/user/logout
+- POST https://e-commerce-n3de.onrender.com/api/v1/user/logout
 
 ### Requests
 <pre> {
@@ -94,7 +94,7 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Users/ForgotPassword
 ### Endpoints
-- POST /api/v1/user/forgot-password
+- POST https://e-commerce-n3de.onrender.com/api/v1/user/forgot-password
 
 ### Requests
 <pre> {
@@ -111,7 +111,7 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Users/ResetPassword
 ### Endpoints
-- POST /api/v1/user/reset-password
+- POST https://e-commerce-n3de.onrender.com/api/v1/user/reset-password
 
 ### Requests
 <pre> {
@@ -130,7 +130,7 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Users/ChangePassword
 ### Endpoints
-- POST /api/v1/user/change-password
+- POST https://e-commerce-n3de.onrender.com/api/v1/user/change-password
 
 ### Requests
 <pre> {
@@ -151,7 +151,7 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Product/Create
 ### Endpoints
-- POST /api/v1/product/create
+- POST https://e-commerce-n3de.onrender.com/api/v1/product/create
 
 ### Requests
 <pre> {
@@ -181,7 +181,7 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Product/List
 ### Endpoints
-- GET /api/v1/product/list
+- GET https://e-commerce-n3de.onrender.com/api/v1/product/list
 
 ### Requests
 ?searchKey=wireless&pageNo=1
@@ -221,7 +221,7 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Product/Delete
 ### Endpoints
-- POST /api/v1/product/delete
+- POST https://e-commerce-n3de.onrender.com/api/v1/product/delete
 
 ### Requests
 <pre> {
@@ -239,7 +239,7 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Product/Update
 ### Endpoints
-- POST /api/v1/product/update/:id
+- POST https://e-commerce-n3de.onrender.com/api/v1/product/update/:id
 
 ### Requests
 <pre> {
@@ -285,7 +285,7 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Cart/Create, Cart/Update, Cart/Delete
 ### Endpoints
-- POST /api/v1/cart/cud
+- POST https://e-commerce-n3de.onrender.com/api/v1/cart/cud
 
 ### Requests
 <pre> {
@@ -313,10 +313,10 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Cart/List
 ### Endpoints
-- POST /api/v1/cart/list
+- POST https://e-commerce-n3de.onrender.com/api/v1/cart/list
 
 ### Requests
-/api/v1/cart/list
+https://e-commerce-n3de.onrender.com/api/v1/cart/list
 
 ### Responses
 <pre> {
@@ -383,7 +383,7 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Coupon/Create
 ### Endpoints
-- POST /api/v1/coupon/create
+- POST https://e-commerce-n3de.onrender.com/api/v1/coupon/create
 
 ### Requests
 <pre> {
@@ -405,10 +405,10 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Coupon/Update
 ### Endpoints
-- POST /api/v1/coupon/update/:id
+- POST https://e-commerce-n3de.onrender.com/api/v1/coupon/update/:id
 
 ### Requests
-/api/v1/coupon/update/685c3433cb3969366c30c3ed
+https://e-commerce-n3de.onrender.com/api/v1/coupon/update/685c3433cb3969366c30c3ed
 <pre> {
     "code": "FESTIVE50",
     "startDate": "2025-07-01T00:00:00.000Z",
@@ -438,10 +438,10 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Coupon/List
 ### Endpoints
-- GET /api/v1/coupon/list
+- GET https://e-commerce-n3de.onrender.com/api/v1/coupon/list
 
 ### Requests
-/api/v1/coupon/list
+https://e-commerce-n3de.onrender.com/api/v1/coupon/list
 
 ### Responses
 <pre> {
@@ -465,10 +465,10 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Coupon/Delete
 ### Endpoints
-- POST /api/v1/coupon/delete
+- POST https://e-commerce-n3de.onrender.com/api/v1/coupon/delete
 
 ### Requests
-/api/v1/coupon/delete/685c3433cb3969366c30c3ed
+https://e-commerce-n3de.onrender.com/api/v1/coupon/delete/685c3433cb3969366c30c3ed
 
 ### Responses
 <pre> {
@@ -481,7 +481,7 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Order/Place Order
 ### Endpoints
-- POST /api/v1/order/place-order
+- POST https://e-commerce-n3de.onrender.com/api/v1/order/place-order
 
 ### Requests
 <pre> {
@@ -499,10 +499,10 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Order/Cancel Order
 ### Endpoints
-- POST /api/v1/order/cancel-order/:id
+- POST https://e-commerce-n3de.onrender.com/api/v1/order/cancel-order/:id
 
 ### Requests
-/api/v1/order/cancel-order/685c40162966df7409e56278
+https://e-commerce-n3de.onrender.com/api/v1/order/cancel-order/685c40162966df7409e56278
 
 ### Responses
 <pre> {
@@ -514,7 +514,7 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Wishlist/Add
 ### Endpoints
-- POST /api/v1/wishlist/add
+- POST https://e-commerce-n3de.onrender.com/api/v1/wishlist/add
 
 ### Requests
 <pre> {
@@ -542,10 +542,10 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Wishlist/List
 ### Endpoints
-- GET /api/v1/wishlist/list
+- GET https://e-commerce-n3de.onrender.com/api/v1/wishlist/list
 
 ### Requests
-/api/v1/wishlist/list
+https://e-commerce-n3de.onrender.com/api/v1/wishlist/list
 
 ### Responses
 <pre> {
@@ -603,10 +603,10 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Wishlist/Remove
 ### Endpoints
-- POST /api/v1/remove/:productId
+- POST https://e-commerce-n3de.onrender.com/api/v1/remove/:productId
 
 ### Requests
-{{base_url}}/api/v1/wishlist/remove/685bec2594c4040773674bbb
+https://e-commerce-n3de.onrender.com/api/v1/wishlist/remove/685bec2594c4040773674bbb
 
 ### Responses
 <pre> {
@@ -628,10 +628,10 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Wishlist/Clear
 ### Endpoints
-- POST /api/v1/wishlist/clear
+- POST https://e-commerce-n3de.onrender.com/api/v1/wishlist/clear
 
 ### Requests
-/api/v1/wishlist/clear
+https://e-commerce-n3de.onrender.com/api/v1/wishlist/clear
 
 ### Responses
 <pre> {
@@ -644,7 +644,7 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Blog/Create-Update
 ### Endpoints
-- POST /api/v1/blog/create-update
+- POST https://e-commerce-n3de.onrender.com/api/v1/blog/create-update
 
 ### Requests
 <pre> {
@@ -673,10 +673,10 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Blog/List
 ### Endpoints
-- GET /api/v1/blog/list/:productId
+- GET https://e-commerce-n3de.onrender.com/api/v1/blog/list/:productId
 
 ### Requests
-/api/v1/blog/list/685be7764d1e6052724ce587
+https://e-commerce-n3de.onrender.com/api/v1/blog/list/685be7764d1e6052724ce587
 
 ### Responses
 <pre> {
@@ -701,10 +701,10 @@ authorization: Bearer <PUT TOKEN HERE AFTER LOGIN>
 
 ## Blog/Delete
 ### Endpoints
-- POST /api/v1/blog/delete/:id
+- POST https://e-commerce-n3de.onrender.com/api/v1/blog/delete/:id
 
 ### Requests
-/api/v1/blog/delete/685c567cc064c4ca254c5d2e
+https://e-commerce-n3de.onrender.com/api/v1/blog/delete/685c567cc064c4ca254c5d2e
 
 ### Responses
 <pre> {

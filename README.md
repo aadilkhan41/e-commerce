@@ -29,7 +29,7 @@ The base URL for all API requests is: http://localhost:8080
 - POST /api/v1/user/register
 
 ### Requests
-<pre> ```json {
+<pre> {
     "firstName": "Aadil",
     "lastName": "Khan",
     "email": "aadil@example.com",
@@ -43,13 +43,13 @@ The base URL for all API requests is: http://localhost:8080
         "state": "Maharashtra",
         "pincode": "400001"
     }
-} ``` </pre>
+} </pre>
 
 ### Responses
-{
+<pre> {
     "succes": true,
     "message": "Register Successfully!"
-}
+} </pre>
 
 ---
 
@@ -58,17 +58,17 @@ The base URL for all API requests is: http://localhost:8080
 - POST /api/v1/user/login
 
 ### Requests
-{
+<pre> {
     "email": "aadil@example.com",
     "password": "NewPass456"
-}
+} </pre>
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Logged in successfully.",
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWJhZjY1OWNkYjhkYTA3Y2NkYjBhMyIsImVtYWlsIjoiYWFkaWxAZXhhbXBsZS5jb20iLCJyb2xlIjoiQ1VTVE9NRVIiLCJpYXQiOjE3NTA4NDA1ODUsImV4cCI6MTc1MDg0NDE4NX0.nq3R-zQWO8_GTbXx3r6Js56OPWOsLMXdfl5vr1jXxJk"
-}
+} </pre>
 
 ---
 
@@ -77,15 +77,15 @@ The base URL for all API requests is: http://localhost:8080
 - POST /api/v1/user/logout
 
 ### Requests
-{
+<pre> {
     "email": "aadil@example.com"
-}
+} </pre>
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Logged out successfully.",
-}
+} </pre>
 
 ---
 
@@ -94,15 +94,15 @@ The base URL for all API requests is: http://localhost:8080
 - POST /api/v1/user/forgot-password
 
 ### Requests
-{
+<pre> {
     "email": "aadil@example.com"
-}
+} </pre>
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "OTP sent to your registered email."
-}
+} </pre>
 
 ---
 
@@ -111,17 +111,17 @@ The base URL for all API requests is: http://localhost:8080
 - POST /api/v1/user/reset-password
 
 ### Requests
-{
+<pre> {
     "email": "aadil@example.com",
     "otp": 6793,
     "newPassword": "Aadilkhan3007"
-}
+} </pre>
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Password reset successfully."
-}
+} </pre>
 
 ---
 
@@ -130,18 +130,18 @@ The base URL for all API requests is: http://localhost:8080
 - POST /api/v1/user/change-password
 
 ### Requests
-{
+<pre> {
     "email": "aadil@example.com",
     "oldPassword": "Aadilkhan3007",
     "newPassword": "NewPass456"
-}
+} </pre>
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Password changed successfully.",
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWJhZjY1OWNkYjhkYTA3Y2NkYjBhMyIsImVtYWlsIjoiYWFkaWxAZXhhbXBsZS5jb20iLCJyb2xlIjoiQ1VTVE9NRVIiLCJpYXQiOjE3NTA4NDMwMDAsImV4cCI6MTc1MDg0NjYwMH0.pHI3clhzeZjveJ0pvs6SrYoo-icL37gm30zlQ229oKw"
-}
+} </pre>
 
 ---
 ---
@@ -151,7 +151,7 @@ The base URL for all API requests is: http://localhost:8080
 - POST /api/v1/product/create
 
 ### Requests
-{
+<pre> {
     "title": "Wireless Mouse",
     "description": "A high precision wireless mouse with ergonomic design.",
     "price": 799,
@@ -165,14 +165,14 @@ The base URL for all API requests is: http://localhost:8080
         "https://images.meesho.com/images/products/441901814/pgxak_512.webp",
         "https://images.meesho.com/images/products/441901814/f5xfb_512.webp"
     ]
-}
+} </pre>
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Product created successfully",
     "productId": "685be7764d1e6052724ce587"
-}
+} </pre>
 
 ---
 
@@ -184,7 +184,7 @@ The base URL for all API requests is: http://localhost:8080
 ?searchKey=wireless&pageNo=1
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Products List API",
     "totalItems": 1,
@@ -212,7 +212,7 @@ The base URL for all API requests is: http://localhost:8080
             "__v": 0
         }
     ]
-}
+} </pre>
 
 ---
 
@@ -221,16 +221,16 @@ The base URL for all API requests is: http://localhost:8080
 - POST /api/v1/product/delete
 
 ### Requests
-{
+<pre> {
     "id": "685be7764d1e6052724ce587"
-}
+} </pre>
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Product deleted successfully",
     "deletedId": "685be7764d1e6052724ce587",
-}
+} </pre>
 
 ---
 
@@ -239,7 +239,7 @@ The base URL for all API requests is: http://localhost:8080
 - POST /api/v1/product/update/:id
 
 ### Requests
-{
+<pre> {
     "title": "Updated Bluetooth Headphones",
     "description": "Noise-cancelling wireless headphones with long battery life.",
     "price": 2499,
@@ -251,10 +251,10 @@ The base URL for all API requests is: http://localhost:8080
         "https://example.com/headphones-1.jpg",
         "https://example.com/headphones-2.jpg"
     ]
-}
+} </pre>
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Product updated successfully",
     "product": {
@@ -276,7 +276,7 @@ The base URL for all API requests is: http://localhost:8080
         "updatedAt": "2025-06-25T12:32:06.316Z",
         "__v": 0
     }
-}
+} </pre>
 
 ---
 
@@ -285,26 +285,26 @@ The base URL for all API requests is: http://localhost:8080
 - POST /api/v1/cart/cud
 
 ### Requests
-{
+<pre> {
   "productId": "685be7764d1e6052724ce587",
   "qty": 3
-}
+} </pre>
 
-{
+<pre> {
   "productId": "685be7764d1e6052724ce587",
   "qty": 0
-}
+} </pre>
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Cart updated successfully"
-}
+} </pre>
 
-{
+<pre> {
     "success": true,
     "message": "Product removed. Cart is now empty and deleted."
-}
+} </pre>
 
 ---
 
@@ -316,7 +316,7 @@ The base URL for all API requests is: http://localhost:8080
 /api/v1/cart/list
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "User cart API",
     "data": {
@@ -374,7 +374,7 @@ The base URL for all API requests is: http://localhost:8080
         "updatedAt": "2025-06-25T17:21:59.394Z",
         "__v": 1
     }
-}
+} </pre>
 
 ---
 
@@ -383,20 +383,20 @@ The base URL for all API requests is: http://localhost:8080
 - POST /api/v1/coupon/create
 
 ### Requests
-{
+<pre> {
     "code": "SAVE20",
     "startDate": "2025-06-25T00:00:00.000Z",
     "endDate": "2025-07-01T00:00:00.000Z",
     "discountPercentage": 20,
     "minOrderValue": 500,
     "maxDiscountValue": 200
-}
+} </pre>
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Coupon created successfully"
-}
+} </pre>
 
 ---
 
@@ -406,17 +406,17 @@ The base URL for all API requests is: http://localhost:8080
 
 ### Requests
 /api/v1/coupon/update/685c3433cb3969366c30c3ed
-{
+<pre> {
     "code": "FESTIVE50",
     "startDate": "2025-07-01T00:00:00.000Z",
     "endDate": "2025-07-10T00:00:00.000Z",
     "discountPercentage": 50,
     "minOrderValue": 1000,
     "maxDiscountValue": 300
-}
+} </pre>
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Coupon updated successfully",
     "data": {
@@ -429,7 +429,7 @@ The base URL for all API requests is: http://localhost:8080
         "maxDiscountValue": 300,
         "__v": 0
     }
-}
+} </pre>
 
 ---
 
@@ -441,7 +441,7 @@ The base URL for all API requests is: http://localhost:8080
 /api/v1/coupon/list
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Coupon list",
     "data": [
@@ -456,7 +456,7 @@ The base URL for all API requests is: http://localhost:8080
             "__v": 0
         }
     ]
-}
+} </pre>
 
 ---
 
@@ -468,11 +468,11 @@ The base URL for all API requests is: http://localhost:8080
 /api/v1/coupon/delete/685c3433cb3969366c30c3ed
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Coupon deleted successfully",
     "deletedId": "685c3433cb3969366c30c3ed"
-}
+} </pre>
 
 ---
 
@@ -481,16 +481,16 @@ The base URL for all API requests is: http://localhost:8080
 - POST /api/v1/order/place-order
 
 ### Requests
-{
+<pre> {
     "paymentMode": "COD",
     "coupon": "SAVE20"
-}
+} </pre>
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Order placed successfully"
-}
+} </pre>
 
 ---
 
@@ -502,10 +502,10 @@ The base URL for all API requests is: http://localhost:8080
 /api/v1/order/cancel-order/685c40162966df7409e56278
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Order cancelled and stock restored"
-}
+} </pre>
 
 ---
 
@@ -514,12 +514,12 @@ The base URL for all API requests is: http://localhost:8080
 - POST /api/v1/wishlist/add
 
 ### Requests
-{
+<pre> {
     "productId": "685bec2594c4040773674bbb"
-}
+} </pre>
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Product added to wishlist",
     "data": {
@@ -533,7 +533,7 @@ The base URL for all API requests is: http://localhost:8080
         "updatedAt": "2025-06-25T19:13:54.896Z",
         "__v": 1
     }
-}
+} </pre>
 
 ---
 
@@ -545,7 +545,7 @@ The base URL for all API requests is: http://localhost:8080
 /api/v1/wishlist/list
 
 ### Responses
-{
+<pre> {
     "success": true,
     "data": {
         "_id": "685c4a07b32fadf90eb97fc3",
@@ -594,7 +594,7 @@ The base URL for all API requests is: http://localhost:8080
         "updatedAt": "2025-06-25T19:13:54.896Z",
         "__v": 1
     }
-}
+} </pre>
 
 ---
 
@@ -606,7 +606,7 @@ The base URL for all API requests is: http://localhost:8080
 {{base_url}}/api/v1/wishlist/remove/685bec2594c4040773674bbb
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Product removed from wishlist",
     "data": {
@@ -619,7 +619,7 @@ The base URL for all API requests is: http://localhost:8080
         "updatedAt": "2025-06-25T19:35:43.488Z",
         "__v": 2
     }
-}
+} </pre>
 
 ---
 
@@ -631,10 +631,10 @@ The base URL for all API requests is: http://localhost:8080
 /api/v1/wishlist/clear
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Wishlist cleared"
-}
+} </pre>
 
 ---
 ---
@@ -644,14 +644,14 @@ The base URL for all API requests is: http://localhost:8080
 - POST /api/v1/blog/create-update
 
 ### Requests
-{
+<pre> {
   "productId": "685be7764d1e6052724ce587",
   "rating": 4,
   "comment": "Excellent product!"
-}
+} </pre>
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Review added",
     "data": {
@@ -664,7 +664,7 @@ The base URL for all API requests is: http://localhost:8080
         "updatedAt": "2025-06-25T20:05:16.371Z",
         "__v": 0
     }
-}
+} </pre>
 
 ---
 
@@ -676,7 +676,7 @@ The base URL for all API requests is: http://localhost:8080
 /api/v1/blog/list/685be7764d1e6052724ce587
 
 ### Responses
-{
+<pre> {
     "success": true,
     "data": [
         {
@@ -692,7 +692,7 @@ The base URL for all API requests is: http://localhost:8080
             "__v": 0
         }
     ]
-}
+} </pre>
 
 ---
 
@@ -704,9 +704,9 @@ The base URL for all API requests is: http://localhost:8080
 /api/v1/blog/delete/685c567cc064c4ca254c5d2e
 
 ### Responses
-{
+<pre> {
     "success": true,
     "message": "Review deleted"
-}
+} </pre>
 
 ---

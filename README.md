@@ -29,7 +29,7 @@ The base URL for all API requests is: http://localhost:8080
 - POST /api/v1/user/register
 
 ### Requests
-{
+<pre> ```json {
     "firstName": "Aadil",
     "lastName": "Khan",
     "email": "aadil@example.com",
@@ -43,7 +43,7 @@ The base URL for all API requests is: http://localhost:8080
         "state": "Maharashtra",
         "pincode": "400001"
     }
-}
+} ``` </pre>
 
 ### Responses
 {

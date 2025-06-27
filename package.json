@@ -1,0 +1,22 @@
+{
+    "name": "ecommerce",
+    "version": "1.0.0",
+    "description": "A full-featured E-commerce web application designed to provide a seamless online shopping experience. The platform allows users to browse products, manage their cart, place orders, and make secure payments.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Aadil Khan",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^6.0.0",
+        "cors": "^2.8.5",
+        "dayjs": "^1.11.13",
+        "dotenv": "^16.5.0",
+        "express": "^5.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.16.0"
+    }
+}
